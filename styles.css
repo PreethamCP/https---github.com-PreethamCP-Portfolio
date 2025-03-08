@@ -28,13 +28,23 @@ html {
   height: 100vh;
   scroll-snap-align: start;
 }
-.logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
+
 .hero {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.nav {
+  width: 100vw;
+  height: 100px;
   background-color: rgb(35, 35, 53);
+}
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  margin: 10px 0 0 10px;
 }
 .content {
   position: absolute;
@@ -71,9 +81,10 @@ html {
 .contact {
   background-color: black;
 }
-.menu,
+.nav,
 .menu ul {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font: var(--h2);
 }
@@ -86,10 +97,36 @@ html {
 }
 
 @media (max-width: 750px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
   .menu {
     display: none;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75vw;
+    height: 100vh;
   }
   .content {
     padding: 100px 0 0 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    position: relative;
+    top: 50px;
+  }
+  .name {
+    font: var(--h2);
+  }
+  .profession,
+  .button,
+  .quote {
+    font: var(--h3);
   }
 }
