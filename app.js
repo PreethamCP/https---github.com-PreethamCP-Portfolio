@@ -1,8 +1,18 @@
-const hamburgerButton = document.getElementById("hamburger");
-const navList = document.getElementById("nav-list");
+document.addEventListener("DOMContentLoaded", function () {
+  // Hamberger Menu
+  var navMenu = document.querySelector(".menu");
+  var menuOpen = document.querySelector(".menuOpen");
+  var menuClose = document.querySelector(".menuClose");
 
-function toggleButton() {
-  navList.classList.toggle("show");
-}
+  menuOpen.addEventListener("click", function () {
+    navMenu.style.display = "flex";
+    menuOpen.style.display = "none";
+    menuClose.style.display = "block";
+  });
 
-hamburgerButton.addEventListener("click", toggleButton);
+  menuClose.addEventListener("click", function () {
+    navMenu.style.display = "none";
+    menuOpen.style.display = "block";
+    menuClose.style.display = "none";
+  });
+});
