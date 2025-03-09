@@ -117,6 +117,12 @@ svg {
   padding-right: 10px;
 }
 @media (max-width: 1000px) {
+  :root {
+    --ff: "Poppins", "sans-serif";
+    --h1: bold 50px/60px var(--ff);
+    --h2: bold 35px/45px var(--ff);
+    --h3: 20px/30px var(--ff);
+  }
   .nav {
     height: 70px;
     width: 100vw;
@@ -143,8 +149,11 @@ svg {
   .catch {
     color: white;
     position: relative;
-    top: 15vh;
+    top: 25vh;
     padding: 20px;
     margin-left: 10px;
+  }
+  h1 {
+    font: var(--h2);
   }
 }
