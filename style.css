@@ -29,7 +29,7 @@ body {
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -93,11 +93,15 @@ div {
   flex-direction: row;
 
   justify-content: space-between;
-  z-index: 99;
+  z-index: 100;
 }
 
 .menu {
-  justify-content: flex-end;
+  background-color: #1c1d25;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 99;
 }
 .logo {
   height: 200px;
@@ -159,6 +163,9 @@ svg {
     --h2: bold 35px/45px var(--ff);
     --h3: 20px/30px var(--ff);
   }
+  a {
+    color: rgb(15, 157, 100);
+  }
   /* Home */
   .nav {
     height: 70px;
@@ -167,12 +174,13 @@ svg {
     align-items: center;
   }
   .menu {
+    background-color: #17181d;
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 150px 0 150px 0;
-    width: 75vw;
+    width: 50vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -194,7 +202,9 @@ svg {
     padding: 20px;
     margin-left: 10px;
   }
-
+  .button a {
+    color: white;
+  }
   /* About me*/
 
   .info h1 {
