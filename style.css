@@ -83,7 +83,7 @@ section {
   background-color: #1c1d25;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+
   justify-content: space-between;
   z-index: 99;
 }
@@ -94,7 +94,7 @@ section {
 .logo {
   height: 200px;
   width: 200px;
-  border-radius: 100px;
+  border-radius: 50%;
   margin: 30px;
 }
 h1 {
@@ -107,7 +107,7 @@ h3 {
   font: var(--h3);
 }
 .socials {
-  position: fixed;
+  position: absolute;
   right: 0px;
   top: 60vh;
   display: flex;
@@ -126,16 +126,20 @@ svg {
   .nav {
     height: 70px;
     width: 100vw;
-    position: fixed;
-    right: 0;
     flex-direction: row;
     align-items: center;
   }
   .menu {
     display: none;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 150px 0 150px 0;
     width: 75vw;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
   }
   .logo {
     height: 60px;
