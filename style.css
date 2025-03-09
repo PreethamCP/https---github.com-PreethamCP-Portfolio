@@ -124,24 +124,28 @@ h3 {
 svg {
   padding-right: 10px;
 }
-/* About me aection */
+
+/* About me section */
 .about {
   background-color: white;
   display: flex;
   justify-content: space-around;
   padding: 80px;
 }
+
 .headshot {
   width: 500px;
   height: 500px;
-  border-radius: 150px;
+  border-radius: 200px;
+  object-fit: cover;
   display: flex;
   align-items: center;
 }
 
-.info h2 {
+.info h1 {
   font-size: 50px;
 }
+
 .info p {
   margin: 0;
   font-size: 30px;
@@ -192,18 +196,23 @@ svg {
 
   /* About me*/
   .about {
-    padding: 0px;
-    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: auto;
   }
+
   .headshot {
     padding: 10px;
     width: 45vw;
-    height: 55vw;
+    height: 45vw;
   }
 
   .info h1 {
-    font: var(--h2);
+    font-size: 35px;
   }
+
   .info p {
     margin: 0;
     font-size: 15px;
