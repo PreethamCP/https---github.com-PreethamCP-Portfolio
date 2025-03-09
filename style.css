@@ -59,7 +59,7 @@ div {
 .catch {
   color: white;
   position: relative;
-  top: 15vh;
+  top: 12vh;
   padding: 20px;
   margin-left: 70px;
 }
@@ -148,6 +148,7 @@ svg {
 
 .info p {
   margin: 0;
+  font: var(--ff);
   font-size: 30px;
   font-weight: 300;
 }
@@ -195,6 +196,18 @@ svg {
   }
 
   /* About me*/
+
+  .info h1 {
+    font-size: 35px;
+  }
+
+  .info p {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 200;
+  }
+}
+@media (max-width: 700px) {
   .about {
     flex-direction: column;
     align-items: center;
@@ -207,15 +220,5 @@ svg {
     padding: 10px;
     width: 45vw;
     height: 45vw;
-  }
-
-  .info h1 {
-    font-size: 35px;
-  }
-
-  .info p {
-    margin: 0;
-    font-size: 15px;
-    font-weight: 200;
   }
 }
