@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Hamberger Menu
   var navMenu = document.querySelector(".menu");
   var menuOpen = document.querySelector(".menuOpen");
   var menuClose = document.querySelector(".menuClose");
