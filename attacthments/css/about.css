@@ -52,4 +52,7 @@
     width: 45vw;
     height: 45vw;
   }
+  .info p {
+    font-weight: 100;
+  }
 }
